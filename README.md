@@ -15,7 +15,7 @@ CRAN登録は行わないため、パッケージはGitHubを経由してイン�
 
 ``` r
 install.packages("remotes")
-remotes::install_github("tokyo/jpcovid19")
+remotes::install_github("tokyor/jpcovid19")
 ```
 
 ## デモ
