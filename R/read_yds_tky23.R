@@ -19,7 +19,7 @@ read_yds_tky23 <- function(path, sheet = NULL, long = FALSE) {
   }
   d <-
     sheet %>%
-    purrr::map_dfr(
+    purrr::map_dfc(
       function(.x) {
         d <-
           readxl::read_xlsx(path, sheet = .x) %>%
@@ -37,7 +37,9 @@ read_yds_tky23 <- function(path, sheet = NULL, long = FALSE) {
         d %>%
           purrr::set_names(
             fix_colnames)
-      })
+      }) %>%
+    dplyr::select(-tidyselect::num_range("エリア", seq.int(length(sheet))),
+                  -tidyselect::num_range("対象分類", seq.int(length(sheet))))
   if (long == TRUE) {
     d <-
       d %>%
