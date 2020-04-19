@@ -38,8 +38,10 @@ read_yds_tky23 <- function(path, sheet = NULL, long = FALSE) {
           purrr::set_names(
             fix_colnames)
       }) %>%
-    dplyr::select(-tidyselect::num_range("エリア", seq.int(length(sheet))),
-                  -tidyselect::num_range("対象分類", seq.int(length(sheet))))
+    dplyr::select(-tidyselect::num_range("\u30a8\u30ea\u30a2",
+                                         seq_len(length(sheet))),
+                  -tidyselect::num_range("\u5bfe\u8c61\u5206\u985e",
+                                         seq_len(length(sheet))))
   if (long == TRUE) {
     d <-
       d %>%
