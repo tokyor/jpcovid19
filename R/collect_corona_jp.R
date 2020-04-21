@@ -1,4 +1,7 @@
 #' Collect mobility data
+#'
+#' @description
+#' \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 #' @param source Data source. Choose between "agoop" or "docomo".
 #' @details Data on the rate of decline in human mobility from
 #' two data sources ("Agoop" or "Docomo") will be obtained from the website.
@@ -7,7 +10,7 @@
 #' @seealso [https://corona.go.jp](https://corona.go.jp)
 #' @export
 collect_corona_go_jp <- function(source) {
-  . <- data <- value <- type <- text <- NULL
+  . <- data <- value <- type <- area <- text <- NULL
   rlang::arg_match(source,
                    c("agoop", "docomo"))
   source <-

@@ -10,7 +10,7 @@ collect_corona_go_jp(source)
 \item{source}{Data source. Choose between "agoop" or "docomo".}
 }
 \description{
-Collect mobility data
+\Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 }
 \details{
 Data on the rate of decline in human mobility from
