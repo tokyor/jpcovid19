@@ -22,7 +22,9 @@ Imports:
     rlang (>= 0.4.5),
     tidyr (>= 1.0.0),
     tidyselect (>= 1.0.0)
+    lifecycle (>= 0.1.0)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)
+RdMacros: lifecycle

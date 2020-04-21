@@ -1,12 +1,11 @@
-#' Read Yahoo Data Solution File
+#' Read Yahoo Data Solution's Tokyo Special Ward File
 #'
-#' @param path The path to the downloaded file in excel format.
+#' @description
+#' \Sexpr[results=rd, stage=render]{lifecycle::badge("superseded")}
+#' @inheritParams read_yds_visitor
 #' @param sheet Sheet to read. Either a string (the name of a sheet),
 #' or an integer (the position of the sheet). It is NULL by default:
 #' Reads all the sheets in the file (the entire period).
-#' @param long The original data is date separated by variables,
-#' and when *TRUE* is specified, it is converted to a format that
-#' stores the date and observables (visitor) in one column each.
 #' @details Reads the "Day-to-day transition of
 #' Tokyo's 23 ward stay population estimates" data provided by
 #' Yahoo Data Solution in an easy-to-use format.

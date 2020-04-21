@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_yds_tky23.R
 \name{read_yds_tky23}
 \alias{read_yds_tky23}
-\title{Read Yahoo Data Solution File}
+\title{Read Yahoo Data Solution's Tokyo Special Ward File}
 \usage{
 read_yds_tky23(path, sheet = NULL, long = FALSE)
 }
@@ -15,10 +15,10 @@ Reads all the sheets in the file (the entire period).}
 
 \item{long}{The original data is date separated by variables,
 and when \emph{TRUE} is specified, it is converted to a format that
-stores the date and observables (visitor) in one column each.}
+stores the date and observable in one column each.}
 }
 \description{
-Read Yahoo Data Solution File
+\Sexpr[results=rd, stage=render]{lifecycle::badge("superseded")}
 }
 \details{
 Reads the "Day-to-day transition of
