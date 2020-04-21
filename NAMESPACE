@@ -3,4 +3,5 @@
 export("%>%")
 export(collect_corona_go_jp)
 export(read_yds_tky23)
+export(read_yds_visitor)
 importFrom(magrittr,"%>%")
