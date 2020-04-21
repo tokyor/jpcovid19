@@ -1,4 +1,7 @@
 #' Collect mobility data
+#'
+#' @description
+#' \Sexpr[results=rd, stage=render]{lifecycle::badge("experimental")}
 #' @param source Data source. Choose between "agoop" or "docomo".
 #' @details Data on the rate of decline in human mobility from
 #' two data sources ("Agoop" or "Docomo") will be obtained from the website.

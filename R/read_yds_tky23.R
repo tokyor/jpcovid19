@@ -9,7 +9,8 @@
 #' @details Reads the "Day-to-day transition of
 #' Tokyo's 23 ward stay population estimates" data provided by
 #' Yahoo Data Solution in an easy-to-use format.
-#' @seealso [https://ds.yahoo.co.jp/](https://ds.yahoo.co.jp/)
+#' @seealso [read_yds_visitor()] for a newly format.
+#' [https://ds.yahoo.co.jp/](https://ds.yahoo.co.jp/)
 #' @export
 read_yds_tky23 <- function(path, sheet = NULL, long = FALSE) {
   if (is.null(sheet)) {

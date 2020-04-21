@@ -26,5 +26,6 @@ Tokyo's 23 ward stay population estimates" data provided by
 Yahoo Data Solution in an easy-to-use format.
 }
 \seealso{
+\code{\link[=read_yds_visitor]{read_yds_visitor()}} for a newly format.
 \url{https://ds.yahoo.co.jp/}
 }
